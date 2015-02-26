@@ -1,0 +1,9 @@
+c:\users\srikarreddy\documents\visual studio 2010\Projects\Snag_Job\Snag_Job\bin\Snag_Job.dll
+c:\users\srikarreddy\documents\visual studio 2010\Projects\Snag_Job\Snag_Job\bin\Snag_Job.pdb
+c:\users\srikarreddy\documents\visual studio 2010\Projects\Snag_Job\Snag_Job\obj\Debug\Snag_Job.dll
+c:\users\srikarreddy\documents\visual studio 2010\Projects\Snag_Job\Snag_Job\obj\Debug\Snag_Job.pdb
+C:\Users\SrikarReddy\Documents\Visual_Studio_2010\Projects\Snag_Job\Snag_Job\bin\Snag_Job.dll
+C:\Users\SrikarReddy\Documents\Visual_Studio_2010\Projects\Snag_Job\Snag_Job\bin\Snag_Job.pdb
+C:\Users\SrikarReddy\Documents\Visual_Studio_2010\Projects\Snag_Job\Snag_Job\obj\Debug\Snag_Job.dll
+C:\Users\SrikarReddy\Documents\Visual_Studio_2010\Projects\Snag_Job\Snag_Job\obj\Debug\Snag_Job.pdb
+C:\Users\SrikarReddy\Documents\Visual_Studio_2010\Projects\Snag_Job\Snag_Job\obj\Debug\Snag_Job.csprojResolveAssemblyReference.cache
