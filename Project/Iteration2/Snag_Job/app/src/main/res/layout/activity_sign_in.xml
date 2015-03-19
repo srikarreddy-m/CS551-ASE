@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.umkc.sm8xd.snag_job.SignInActivity"
+    android:background="@drawable/sunrise"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/signin_scrollview1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="@bool/abc_action_bar_embed_tabs"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/signin_scrollview1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            >
+
+            <TextView
+                android:layout_width="84dp"
+                android:layout_height="35dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Welcome"
+                android:id="@+id/text_signin"
+                android:textAlignment="center"
+                android:layout_alignBottom="@+id/ET_email_signin"
+                android:layout_alignLeft="@+id/sign_in_text"
+                android:layout_alignStart="@+id/sign_in_text" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/ET_email_signin"
+                android:layout_alignRight="@+id/sign_in_text"
+                android:layout_alignEnd="@+id/sign_in_text"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/sign_in_viewappliedjobs_btn"
+                android:layout_toEndOf="@+id/sign_in_viewappliedjobs_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="How would you like to proceed today?"
+                android:id="@+id/sign_in_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="54dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employer"
+                android:id="@+id/sign_in_employer_btn"
+                android:layout_below="@+id/sign_in_text"
+                android:background="@android:drawable/button_onoff_indicator_on"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:alpha="99"
+                android:layout_marginTop="5dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Applicant"
+                android:id="@+id/sign_in_applicant_btn"
+                android:layout_below="@+id/sign_in_text"
+                android:layout_alignRight="@+id/sign_in_employer_btn"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:drawable/button_onoff_indicator_on"
+                android:layout_alignLeft="@+id/sign_in_searchjob_btn"
+                android:layout_alignStart="@+id/sign_in_searchjob_btn"
+                android:layout_marginTop="5dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sign_in_postjob_btn"
+                android:text="Post Job"
+                android:layout_below="@+id/sign_in_employer_btn"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/sign_in_employer_btn"
+                android:layout_alignEnd="@+id/sign_in_employer_btn"
+                android:backgroundTint="#ff32b5ff"
+                android:background="@android:drawable/button_onoff_indicator_on"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sign_in_view_postedjob_btn"
+                android:text="View Posted Jobs"
+                android:layout_below="@+id/sign_in_postjob_btn"
+                android:background="@android:drawable/button_onoff_indicator_on"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/sign_in_postjob_btn"
+                android:layout_alignEnd="@+id/sign_in_postjob_btn"
+                android:backgroundTintMode="src_atop"
+                android:backgroundTint="#ff32b5ff"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search Job"
+                android:id="@+id/sign_in_searchjob_btn"
+                android:layout_below="@+id/sign_in_applicant_btn"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="#ff32b5ff"
+                android:background="@android:drawable/button_onoff_indicator_on"
+                android:layout_marginTop="5dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Applied Jobs"
+                android:id="@+id/sign_in_viewappliedjobs_btn"
+                android:layout_below="@+id/sign_in_searchjob_btn"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/sign_in_searchjob_btn"
+                android:layout_alignStart="@+id/sign_in_searchjob_btn"
+                android:backgroundTint="#ff32b5ff"
+                android:background="@android:drawable/button_onoff_indicator_on"
+                android:layout_marginTop="5dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
