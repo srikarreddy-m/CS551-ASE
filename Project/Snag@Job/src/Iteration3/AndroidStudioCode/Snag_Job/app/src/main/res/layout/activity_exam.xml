@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.umkc.sm8xd.snag_job.ExamActivity"
+    android:background="@drawable/flower">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Start Test"
+        android:id="@+id/exam_start_btn"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundshapebtn"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id = "@+id/exam_question_sub_layout"
+        android:layout_below="@id/exam_start_btn"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:text="Large Text"
+        android:id="@+id/exam_question_no"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="87dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/exam_question"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/exam_question_no"
+        android:layout_toRightOf="@+id/exam_question_no"
+        android:layout_toEndOf="@+id/exam_question_no" />
+    <RadioGroup
+        android:id="@+id/exam_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exam_question"
+        >
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/exam_question_option1"
+        android:layout_below="@+id/exam_question"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/exam_question_option2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/exam_question_option1" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/exam_question_option3"
+        android:layout_below="@+id/exam_question_option2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/exam_question_option4"
+        android:layout_below="@+id/exam_question_option3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    </RadioGroup>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="Next"
+        android:id="@+id/exam_question_next_btn"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/exam_options"
+        android:layout_alignRight="@+id/exam_question"
+        android:layout_alignEnd="@+id/exam_question"
+        android:background="@drawable/roundshapebtn"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="Finish"
+        android:id="@+id/exam_question_finish_btn"
+        android:layout_alignTop="@+id/exam_question_next_btn"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundshapebtn"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

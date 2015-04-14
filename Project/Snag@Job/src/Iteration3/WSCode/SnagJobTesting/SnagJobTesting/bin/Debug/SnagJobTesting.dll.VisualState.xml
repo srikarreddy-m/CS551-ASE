@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1011]C:\Users\SrikarReddy\Documents\Visual_Studio_2010\Projects\SnagJobTesting\SnagJobTesting\bin\Debug\SnagJobTesting.dll</TopNode>
+  <SelectedNode>[0-1007]Lab7TestWS.Service.updatePostJobDetailsTest</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1011]C:\Users\SrikarReddy\Documents\Visual_Studio_2010\Projects\SnagJobTesting\SnagJobTesting\bin\Debug\SnagJobTesting.dll" Expanded="true" />
+    <Node UniqueName="[0-1012]Lab7TestWS" Expanded="true" />
+    <Node UniqueName="[0-1000]Lab7TestWS.Service" Expanded="true" />
+  </Nodes>
+</VisualState>

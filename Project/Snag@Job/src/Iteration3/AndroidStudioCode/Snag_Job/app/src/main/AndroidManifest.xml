@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.umkc.sm8xd.snag_job" >
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".PostJobActivity"
+            android:label="@string/title_activity_post_job_" >
+        </activity>
+        <activity
+            android:name=".SignInActivity"
+            android:label="@string/title_activity_sign_in"
+            android:parentActivityName=".LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.umkc.sm8xd.snag_job.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_signup"
+            android:parentActivityName=".LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.umkc.sm8xd.snag_job.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".SearchJobActivity"
+            android:label="@string/title_activity_apply_job"
+            android:parentActivityName=".SignInActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SignInActivity" />
+        </activity>
+        <activity
+            android:name=".ViewPostedJobsActivity"
+            android:label="@string/title_activity_view_posted_jobs"
+            android:parentActivityName=".SignInActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.umkc.sm8xd.snag_job.SignInActivity" />
+        </activity>
+        <activity
+            android:name=".ViewIndividualPostJobActivity"
+            android:label="Job Details"
+            android:parentActivityName=".ViewPostedJobsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.umkc.sm8xd.snag_job.ViewPostedJobsActivity" />
+        </activity>
+        <activity
+            android:name=".ViewIndividualSearchJobActivity"
+            android:label="@string/title_activity_view_individual_search_job"
+            android:parentActivityName=".SearchJobActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.umkc.sm8xd.snag_job.SearchJobActivity" />
+        </activity>
+        <activity
+            android:name=".ApplicationActivity"
+            android:label="@string/title_activity_application"
+            android:parentActivityName=".ViewIndividualSearchJobActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.umkc.sm8xd.snag_job.ViewIndividualSearchJobActivity" />
+        </activity>
+        <activity
+            android:name=".LinkedinDialogActivity"
+            android:label="@string/title_activity_linkedin_dialog" >
+        </activity>
+        <activity
+            android:name=".LinkedInSampleActivity"
+            android:label="@string/title_activity_linked_in_sample" >
+        </activity>
+        <activity
+            android:name=".Accept_Reject_Application_Activity"
+            android:label="@string/title_activity_accept__reject__application_"
+            android:parentActivityName=".ViewIndividualPostJobActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.umkc.sm8xd.snag_job.ViewIndividualPostJobActivity" />
+        </activity>
+        <activity
+            android:name=".ExamActivity"
+            android:label="@string/title_activity_questions"
+            android:parentActivityName=".ApplicationActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.umkc.sm8xd.snag_job.ApplicationActivity" />
+        </activity>
+    </application>
+
+</manifest>

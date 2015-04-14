@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\SrikarReddy\Documents\Visual_Studio_2010\Projects\SnagJobTesting\SnagJobTesting\bin\Debug\SnagJobTesting.dll" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-04-13" time="19:38:14">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8009" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="MSR-LAPPY" user="SrikarReddy" user-domain="MSR-LAPPY" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\SrikarReddy\Documents\Visual_Studio_2010\Projects\SnagJobTesting\SnagJobTesting\bin\Debug\SnagJobTesting.dll" executed="True" result="Failure" success="False" time="0.008" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Lab7TestWS" executed="True" result="Failure" success="False" time="0.007" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="Service" executed="True" result="Failure" success="False" time="0.007" asserts="0">
+            <results>
+              <test-case name="Lab7TestWS.Service.individualJobApplicationsTest" executed="True" result="Failure" success="False" time="0.006" asserts="1">
+                <failure>
+                  <message><![CDATA[  Expected string length 166 but was 168. Strings differ at index 36.
+  Expected: "...licationID":1,"CreationDate":"/Date(1428801517363-0500)/",..."
+  But was:  "...licationID":1,"CreationDate":"\\/Date(1428801517363-0500)\\/..."
+  --------------------------------------------^
+]]></message>
+                  <stack-trace><![CDATA[at Lab7TestWS.Service.individualJobApplicationsTest() in C:\Users\SrikarReddy\Documents\Visual_Studio_2010\Projects\SnagJobTesting\SnagJobTesting\Class1.cs:line 154
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
