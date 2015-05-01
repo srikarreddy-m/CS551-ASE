@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Snag_Job</string>
+    <string name="SignIn">Sign In</string>
+    <string name="Register">Sign Up</string>
+    <string name="prompt_password2">Password</string>
+    <string name="prompt_c_password">Confirm Password</string>
+    <string name="prompt_fname">First Name</string>
+    <string name="prompt_l_name">Last Name</string>
+    <string name="prompt_phno">Mobile Number</string>
+    <string name="prompt_address">Postal Address</string>
+    <string name="prompt_city">City</string>
+    <string name="prompt_state">State</string>
+    <string name="prompt_zip_code">Zip Code</string>
+    <string name="title_activity_post_job_">Post_job_Activity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sign_in">SignIn</string>
+    <string name="title_activity_activity__signup">Sign Up</string>
+    <string name="title_activity_signup">Sign Up</string>
+    <string name="ProjectTitle">Snag@Job</string>
+    <string name="title_activity_apply_job">Apply Job</string>
+    <string name="title_activity_search_job">Search Jobs</string>
+    <string name="title_activity_employer_view_posted_job">View Posts</string>
+    <string name="title_activity_view_posted_jobs">View Posts</string>
+    <string name="title_activity_view_individual_post_job_description">
+        ViewIndividualPostJobDescriptionActivity
+    </string>
+    <string name="title_activity_view_individual_search_job">Job Details</string>
+    <string name="title_activity_application">Application Form</string>
+    <string name="title_activity_linkedin_dialog">LinkedinDialog</string>
+    <string name="title_activity_linked_in_sample">LinkedIn</string>
+    <string name="title_activity_accept__reject__application_">Applicant Profile</string>
+    <string name="title_activity_questions">Test</string>
+    <string name="title_activity_view_applied_job">ViewAppliedJobs</string>
+    <string name="title_activity_temp">TempActivity</string>
+    <string name="title_activity_view_individual_applied_job">Applied Job Details</string>
+    <string name="title_activity_gmail_login">GmailLoginActivity</string>
+    <string name="title_activity_map">Search Job Maps</string>
+
+</resources>

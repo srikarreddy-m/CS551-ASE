@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.umkc.sm8xd.snag_job.ApplicationActivity"
+    android:background="@drawable/flower">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <EditText
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/application_email"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/prompt_email"
+                 />
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/application_fname"
+                android:layout_below="@+id/application_email"
+                android:layout_alignParentLeft="true"
+                android:hint="@string/prompt_fname"
+                />
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/application_lname"
+                android:layout_below="@+id/application_email"
+                android:hint="@string/prompt_l_name"
+                android:layout_toEndOf="@+id/application_fname" />
+
+            <EditText
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/application_phno"
+                android:maxLength="10"
+                android:layout_below="@+id/application_lname"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/prompt_phno" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Skills Set"
+                android:id="@+id/application_skill_text"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="#ff318bff"
+                android:layout_below="@+id/application_phno"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="@+id/application_applicant_skill_ET"
+                android:layout_marginBottom="95dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/application_applicant_skill_ET"
+                android:hint="Skills"
+                android:layout_below="@+id/application_phno"
+                android:layout_toRightOf="@+id/application_skill_text"
+                android:layout_alignRight="@+id/application_lname"
+                android:layout_alignEnd="@+id/application_lname" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Additional documents"
+                android:id="@+id/application_document_text"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="#ff318bff"
+                android:layout_below="@+id/application_skill_text"
+                android:layout_alignParentLeft="true"
+                 />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/application_imageView"
+                android:layout_marginBottom="182dp"
+                android:layout_alignLeft="@+id/application_applicant_skill_ET"
+                android:layout_alignStart="@+id/application_applicant_skill_ET"
+                android:layout_alignRight="@+id/application_phno"
+                android:layout_alignEnd="@+id/application_phno"
+                android:layout_below="@+id/application_document_text"
+                android:contentDescription="upload" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Test Your Skills ??"
+                android:id="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/application_imageView"
+                android:layout_alignRight="@+id/application_imageView"
+                android:layout_alignEnd="@+id/application_imageView"
+                android:layout_marginTop="50dp"
+                android:textColor="#ff280bab" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Next"
+                android:id="@+id/application_next_btn"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="64dp"
+                android:background="@drawable/roundshapebtn"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

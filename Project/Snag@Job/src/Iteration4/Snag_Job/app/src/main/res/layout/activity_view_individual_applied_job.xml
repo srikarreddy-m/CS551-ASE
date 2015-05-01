@@ -1,0 +1,366 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.umkc.sm8xd.snag_job.ViewIndividualAppliedJobActivity"
+    android:background="@drawable/flower">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Application Details"
+        android:id="@+id/view_individual_applied_job_Title_text"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#ff318bff"
+        android:layout_marginBottom="10dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/accept_reject_scrollView"
+        android:layout_below="@+id/view_individual_applied_job_Title_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Email"
+                android:id="@+id/view_individual_applied_job_email_text"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="#ff318bff"
+
+                android:layout_alignParentLeft="true"
+
+                />
+
+
+            <TextView
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:id="@+id/view_individual_applied_job_email"
+                android:hint="@string/prompt_email"
+
+                android:layout_alignRight="@+id/view_individual_applied_job_lname"
+                android:layout_alignEnd="@+id/view_individual_applied_job_lname"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/view_individual_applied_job_fname"
+                android:layout_alignStart="@+id/view_individual_applied_job_fname" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="FirstName"
+                android:id="@+id/view_individual_applied_job_fname_text"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="#ff318bff"
+                android:layout_below="@+id/view_individual_applied_job_email_text"
+
+                android:layout_alignParentLeft="true"
+
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="prompt_f_name"
+                android:ems="10"
+                android:id="@+id/view_individual_applied_job_fname"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="22dp"
+                android:layout_below="@+id/view_individual_applied_job_email_text"
+                android:layout_toRightOf="@+id/view_individual_applied_job_fname_text"
+                android:layout_toEndOf="@+id/view_individual_applied_job_fname_text" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="LastName"
+                android:id="@+id/view_individual_applied_job_lname_text"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="#ff318bff"
+                android:layout_below="@+id/view_individual_applied_job_fname_text"
+
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:id="@+id/view_individual_applied_job_lname"
+                android:hint="@string/prompt_l_name"
+
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/view_individual_applied_job_fname"
+                android:layout_alignLeft="@+id/view_individual_applied_job_fname"
+                android:layout_alignStart="@+id/view_individual_applied_job_fname" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Mobile#"
+                android:id="@+id/view_individual_applied_job_phno_text"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="#ff318bff"
+                android:layout_below="@+id/view_individual_applied_job_lname_text"
+                android:layout_alignParentLeft="true"
+
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:id="@+id/view_individual_applied_job_phno"
+                android:maxLength="10"
+
+                android:hint="@string/prompt_phno"
+                android:layout_alignRight="@+id/view_individual_applied_job_lname"
+                android:layout_alignEnd="@+id/view_individual_applied_job_lname"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/view_individual_applied_job_lname"
+                android:layout_alignLeft="@+id/view_individual_applied_job_lname"
+                android:layout_alignStart="@+id/view_individual_applied_job_lname" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Skills Set"
+                android:id="@+id/view_individual_applied_job_skill_text"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="#ff318bff"
+                android:layout_below="@+id/view_individual_applied_job_phno"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="@+id/view_individual_applied_job_applicant_skill_ET"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:ems="10"
+                android:id="@+id/view_individual_applied_job_applicant_skill_ET"
+                android:hint="Skills"
+                android:layout_alignTop="@+id/view_individual_applied_job_skill_text"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/view_individual_applied_job_phno"
+                android:layout_alignStart="@+id/view_individual_applied_job_phno" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Status"
+                android:id="@+id/view_individual_applied_job_status_text"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="#ff318bff"
+                android:layout_below="@+id/view_individual_applied_job_skill_text"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:ems="10"
+                android:id="@+id/view_individual_applied_job_status_text_ET"
+                android:hint="status"
+
+                android:layout_alignLeft="@+id/view_individual_applied_job_applicant_skill_ET"
+                android:layout_alignStart="@+id/view_individual_applied_job_applicant_skill_ET"
+                android:layout_alignBottom="@+id/view_individual_applied_job_status_text"
+                android:layout_below="@+id/view_individual_applied_job_applicant_skill_ET"
+                android:layout_alignRight="@+id/view_individual_applied_job_phno"
+                android:layout_alignEnd="@+id/view_individual_applied_job_phno" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Job Title"
+                android:id="@+id/view_individual_applied_job_text_jobdesc"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/view_individual_applied_job_status_text_ET"
+                android:textColor="#ff318bff"
+                android:layout_below="@+id/view_individual_applied_job_status_text"
+                android:layout_toLeftOf="@+id/view_individual_applied_job_status_text_ET" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_individual_applied_job_post_job_desc"
+
+
+                android:hint="Short Description"
+                android:text="hi"
+                android:layout_above="@+id/view_individual_applied_job_text_skill"
+                android:layout_alignTop="@+id/view_individual_applied_job_text_jobdesc"
+                android:layout_toRightOf="@+id/view_individual_applied_job_text_jobdesc"
+                android:layout_toEndOf="@+id/view_individual_applied_job_text_jobdesc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Skills Required"
+                android:id="@+id/view_individual_applied_job_text_skill"
+                android:layout_below="@+id/view_individual_applied_job_text_jobdesc"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="#ff318bff"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/view_individual_applied_job_post_job_skill"
+
+                android:hint="Skills Required"
+                android:layout_above="@+id/text_job_loc"
+                android:layout_alignLeft="@+id/view_individual_applied_job_post_address"
+                android:layout_alignStart="@+id/view_individual_applied_job_post_address" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Job Location"
+                android:id="@+id/text_job_loc"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/view_individual_applied_job_text_skill"
+                android:layout_alignRight="@+id/view_individual_applied_job_text_skill"
+                android:layout_alignEnd="@+id/view_individual_applied_job_text_skill"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="#ff318bff"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:id="@+id/view_individual_applied_job_post_address"
+                android:hint="Postal Address"
+                android:layout_alignTop="@+id/text_job_loc"
+                android:layout_toRightOf="@+id/view_individual_applied_job_text_skill"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_individual_applied_job_city"
+                android:inputType="text"
+                android:hint="City Name"
+                android:layout_alignRight="@+id/view_individual_applied_job_post_address"
+                android:layout_alignEnd="@+id/view_individual_applied_job_post_address"
+                android:layout_toEndOf="@+id/text_job_loc"
+                android:layout_below="@+id/text_job_loc"
+                android:layout_alignLeft="@+id/view_individual_applied_job_post_address"
+                android:layout_alignStart="@+id/view_individual_applied_job_post_address"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/view_individual_applied_job_zip"
+                android:hint="Zip Code"
+                android:layout_alignRight="@+id/view_individual_applied_job_city"
+                android:layout_alignEnd="@+id/view_individual_applied_job_city"
+                android:layout_toEndOf="@+id/text_job_loc"
+                android:layout_below="@+id/view_individual_applied_job_city"
+                android:layout_alignLeft="@+id/view_individual_applied_job_city"
+                android:layout_alignStart="@+id/view_individual_applied_job_city"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="JobStatus"
+                android:id="@+id/view_individual_applied_job_text_job_rnr"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_below="@+id/view_individual_applied_job_zip"
+                android:layout_toLeftOf="@+id/view_individual_applied_job_zip"
+                android:layout_toStartOf="@+id/view_individual_applied_job_zip"
+                android:layout_alignBottom="@+id/view_individual_applied_job_post_job_rnr"
+                android:textColor="#ff318bff"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/view_individual_applied_job_post_job_rnr"
+
+                android:hint="JobStatus"
+                android:layout_toEndOf="@+id/text_job_loc"
+                android:layout_below="@+id/view_individual_applied_job_zip"
+                android:layout_toRightOf="@+id/text_job_loc"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Pay/hr"
+                android:id="@+id/view_individual_applied_job_text_post_pay"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="#ff318bff"
+                android:layout_alignBottom="@+id/view_individual_applied_job_job_pay"
+                android:layout_below="@+id/view_individual_applied_job_text_job_rnr"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/view_individual_applied_job_job_pay"
+
+                android:hint="Job Pay Per Hour"
+                android:layout_toEndOf="@+id/text_job_loc"
+                android:layout_below="@+id/view_individual_applied_job_post_job_rnr"
+                android:layout_toRightOf="@+id/text_job_loc"
+                android:layout_marginTop="10dp" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
