@@ -91,6 +91,7 @@ public class PostJobActivity extends ActionBarActivity {
                 JobZipCodeET = ((EditText) findViewById(R.id.search_job_zip)).getText().toString();
                 JobPayET = ((EditText) findViewById(R.id.search_job_pay)).getText().toString();
                 JobDateET = ((EditText) findViewById(R.id.post_jobDate)).getText().toString();
+
                 CategoryET = ((Spinner) findViewById(R.id.search_job_category)).getSelectedItem().toString();
                 SubCategoryET = ((Spinner) findViewById(R.id.search_job_subcategory)).getSelectedItem().toString();
                 System.out.print("SubCategoryET  is:" + SubCategoryET);
@@ -108,9 +109,9 @@ public class PostJobActivity extends ActionBarActivity {
         });
     }
     private void findViewsById() {
-        fromDateEtxt = (TextView) findViewById(R.id.displaySDate);
-        fromDateEtxt.setInputType(InputType.TYPE_NULL);
-        fromDateEtxt.requestFocus();
+       // fromDateEtxt = (TextView) findViewById(R.id.displaySDate);
+ //       fromDateEtxt.setInputType(InputType.TYPE_NULL);
+       // fromDateEtxt.requestFocus();
 
     }
 
@@ -125,7 +126,8 @@ public class PostJobActivity extends ActionBarActivity {
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                 Calendar newDate = Calendar.getInstance();
                 newDate.set(year, monthOfYear, dayOfMonth);
-                fromDateEtxt.setText(dateFormatter.format(newDate.getTime()));
+                ((EditText) findViewById(R.id.post_jobDate)).setText(dateFormatter.format(newDate.getTime()));
+
             }
 
         },newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));

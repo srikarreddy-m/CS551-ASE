@@ -235,9 +235,9 @@ public class ViewIndividualPostJobActivity extends ActionBarActivity {
                         "Job Post Successfully Updated",
                         Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(context, Accept_Reject_Application_Activity.class);
+                Intent intent = new Intent(context, SignInActivity.class);
                 intent.putExtra("user_email", email);
-                intent.putExtra("ListItem", listItem);
+              //  intent.putExtra("ListItem", listItem);
                 startActivity(intent);
 
 

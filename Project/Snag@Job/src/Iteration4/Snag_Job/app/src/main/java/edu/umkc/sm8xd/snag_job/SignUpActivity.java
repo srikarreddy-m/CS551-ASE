@@ -166,7 +166,7 @@ public class SignUpActivity extends ActionBarActivity {
                 System.out.println("Inside Button click Statement");
                 System.out.println(insert_stmt);
 
-                new ReadWCFServiceFeed().execute("http://kc-sce-cs551.kc.umkc.edu/aspnet_client/Group5/project/Snag_Job/Service1.svc/insertUserDetails/" + insert_stmt);
+                new ReadWCFServiceFeed().execute("http://10.0.2.2:60838/Service1.svc/insertUserDetails/" + insert_stmt);
 
                 System.out.println("Inside Post Button  Statement");
             }
@@ -215,7 +215,7 @@ public class SignUpActivity extends ActionBarActivity {
                             Toast.LENGTH_SHORT).show();
 
                     Intent intent1 = new Intent(context, SignInActivity.class);
-                    intent1.putExtra("reg_email", emailET.getText().toString());
+                    intent1.putExtra("user_email", emailET.getText().toString());
                     startActivity(intent1);
 
                 }

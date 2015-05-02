@@ -152,7 +152,7 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
                 EditText loginEmail = (EditText) findViewById(R.id.email);
                 EditText loginpwd = (EditText) findViewById(R.id.password);
                 //Validate form db user name and pwd
-                new ReadWCFServiceFeed().execute("http://kc-sce-cs551.kc.umkc.edu/aspnet_client/Group5/project/Snag_Job/Service1.svc/retrieveLogin/" + loginEmail.getText().toString());
+                new ReadWCFServiceFeed().execute("http://10.0.2.2:60838/Service1.svc/retrieveLogin/" + loginEmail.getText().toString());
                 Intent intent1 = new Intent(context, SignInActivity.class);
                 intent1.putExtra("user_email", loginEmail.getText().toString());
                 String var = intent1.getStringExtra("user_email");

@@ -272,26 +272,18 @@
              android:layout_alignLeft="@+id/post_jobDate"
              android:layout_alignStart="@+id/post_jobDate" />
 
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="cal"
+
+             android:id="@+id/sDate"
+             android:layout_above="@+id/post_longjob_desc"
+             android:layout_alignRight="@+id/search_job_pay"
+             android:layout_alignEnd="@+id/search_job_pay" />
+
      </RelativeLayout>
     </ScrollView>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start Date"
-
-        android:id="@+id/sDate"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="mm/dd/yyyy"
-        android:textSize="20sp"
-        android:id="@+id/displaySDate"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="100dp"
@@ -301,7 +293,6 @@
 
         android:background="@drawable/roundshapebtn"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/post_scrollView"
-        android:layout_alignEnd="@+id/post_scrollView" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

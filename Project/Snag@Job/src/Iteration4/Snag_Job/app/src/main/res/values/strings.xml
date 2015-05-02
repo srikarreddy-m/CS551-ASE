@@ -38,5 +38,6 @@
     <string name="title_activity_view_individual_applied_job">Applied Job Details</string>
     <string name="title_activity_gmail_login">GmailLoginActivity</string>
     <string name="title_activity_map">Search Job Maps</string>
+    <string name="title_activity_send_email">SendEmailActivity</string>
 
 </resources>

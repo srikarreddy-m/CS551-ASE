@@ -61,7 +61,7 @@ public class ViewIndividualSearchJobActivity extends ActionBarActivity {
         final String stmt1 = listItemsSplit[0] + "," + email;
         searchApplyJob = (Button) findViewById(R.id.view_individual_search_job_save_btn);
 
-        new ReadWCFServiceFeed().execute("http://kc-sce-cs551.kc.umkc.edu/aspnet_client/Group5/project/Snag_Job/Service1.svc/retrieveIndividualJobDetail/" + stmt1);
+        new ReadWCFServiceFeed().execute("http://10.0.2.2:60838/Service1.svc/retrieveIndividualJobDetail/" + stmt1);
 
         searchApplyJob.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -155,7 +155,7 @@
             <Button
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:text="Accept"
+                android:text="Accept and send Email"
                 android:id="@+id/accept_reject_application_accept_btn"
                 android:layout_centerVertical="true"
                 android:layout_below="@+id/accept_reject_application_applicant_skill_ET"
@@ -167,7 +167,7 @@
             <Button
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:text="Reject"
+                android:text="Reject and send Email"
                 android:id="@+id/accept_reject_application_reject_btn"
                 android:layout_below="@+id/accept_reject_application_applicant_skill_ET"
                 android:layout_alignTop="@+id/accept_reject_application_accept_btn"

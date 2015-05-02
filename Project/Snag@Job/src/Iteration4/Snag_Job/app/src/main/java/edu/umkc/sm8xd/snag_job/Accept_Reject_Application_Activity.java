@@ -160,7 +160,7 @@ public class Accept_Reject_Application_Activity extends ActionBarActivity {
 WebService Call to update application status
  */
 
-                    Intent intent1 = new Intent(context, SignInActivity.class);
+                    Intent intent1 = new Intent(context, SendEmailActivity.class);
                     intent1.putExtra("reg_email", email);
                     startActivity(intent1);
 
@@ -176,7 +176,7 @@ WebService Call to update application status
  */
 
 
-                    Intent intent1 = new Intent(context, SignInActivity.class);
+                    Intent intent1 = new Intent(context, SendEmailActivity.class);
                     intent1.putExtra("reg_email", email);
                     startActivity(intent1);
 

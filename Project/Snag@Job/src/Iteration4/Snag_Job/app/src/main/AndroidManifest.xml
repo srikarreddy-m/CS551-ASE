@@ -13,7 +13,9 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <uses-library android:name="com.google.android.maps" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -143,7 +145,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.umkc.sm8xd.snag_job.LoginActivity" />
         </activity>
-
+        <activity
+            android:name=".SendEmailActivity"
+            android:label="@string/title_activity_send_email"
+            android:parentActivityName=".Accept_Reject_Application_Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.umkc.sm8xd.snag_job.Accept_Reject_Application_Activity" />
+        </activity>
     </application>
 
 </manifest>
